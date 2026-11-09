@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить ПК</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">НАЗАД В КАТАЛОГ</a>
+        </nav>
+
+        <h1>НОВАЯ СБОРКА</h1>
+        
+        <form id="addForm">
+            <div class="form-group">
+                <label>ВИДЕОКАРТА (GPU)</label>
+                <input type="text" name="gpu" required placeholder="RTX 4090">
+            </div>
+            <div class="form-group">
+                <label>ПРОЦЕССОР (CPU)</label>
+                <input type="text" name="cpu" required placeholder="Intel i9">
+            </div>
+            <div class="form-group">
+                <label>МАТЕРИНСКАЯ ПЛАТА</label>
+                <input type="text" name="motherboard" required>
+            </div>
+            <div class="form-group">
+                <label>ОЗУ (RAM)</label>
+                <input type="text" name="ram" required placeholder="32GB DDR5">
+            </div>
+            <div class="form-group">
+                <label>ОХЛАЖДЕНИЕ</label>
+                <input type="text" name="cooler" required>
+            </div>
+            <div class="form-group">
+                <label>НАКОПИТЕЛИ (MEMORY)</label>
+                <input type="text" name="memory" required placeholder="1TB SSD">
+            </div>
+            <div class="form-group">
+                <label>ФОТО СБОРКИ</label>
+                <input type="file" name="image" accept="image/*">
+            </div>
+
+            <button type="submit" class="btn">СОХРАНИТЬ</button>
+        </form>
+    </div>
+
+    <script type="module" src="js/add.js"></script>
+</body>
+</html>

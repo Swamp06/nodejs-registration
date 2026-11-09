@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать ПК</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">НАЗАД В КАТАЛОГ</a>
+        </nav>
+
+        <h1>РЕДАКТИРОВАНИЕ</h1>
+        
+        <form id="editForm">
+            <div class="form-group">
+                <label>ВИДЕОКАРТА (GPU)</label>
+                <input type="text" name="gpu" required>
+            </div>
+            <div class="form-group">
+                <label>ПРОЦЕССОР (CPU)</label>
+                <input type="text" name="cpu" required>
+            </div>
+            <div class="form-group">
+                <label>МАТЕРИНСКАЯ ПЛАТА</label>
+                <input type="text" name="motherboard" required>
+            </div>
+            <div class="form-group">
+                <label>ОЗУ (RAM)</label>
+                <input type="text" name="ram" required>
+            </div>
+            <div class="form-group">
+                <label>ОХЛАЖДЕНИЕ</label>
+                <input type="text" name="cooler" required>
+            </div>
+            <div class="form-group">
+                <label>НАКОПИТЕЛИ (MEMORY)</label>
+                <input type="text" name="memory" required>
+            </div>
+            <!-- Картинку тут не меняем, так как бэкенд не принимает файл при PATCH -->
+
+            <button type="submit" class="btn">ОБНОВИТЬ</button>
+        </form>
+    </div>
+
+    <script type="module" src="js/edit.js"></script>
+</body>
+</html>
